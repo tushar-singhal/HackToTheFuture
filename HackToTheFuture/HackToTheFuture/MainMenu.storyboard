@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,15 +23,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-xv-jQQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="447"/>
                                 <connections>
                                     <segue destination="61o-V2-4Dz" kind="embed" id="zAK-8b-W4y"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxO-YR-O3H">
-                                <rect key="frame" x="0.0" y="372" width="375" height="295"/>
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="295" id="xdj-If-atS"/>
+                                    <constraint firstAttribute="height" constant="200" id="xdj-If-atS"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="soI-es-E3Q" kind="embed" id="Q49-S1-d83"/>
@@ -39,10 +40,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CxO-YR-O3H" firstAttribute="top" secondItem="Sxl-xv-jQQ" secondAttribute="bottom" id="2f4-ji-OnH"/>
                             <constraint firstAttribute="trailing" secondItem="Sxl-xv-jQQ" secondAttribute="trailing" id="57o-vL-APr"/>
                             <constraint firstItem="9UA-so-ZRO" firstAttribute="top" secondItem="CxO-YR-O3H" secondAttribute="bottom" id="DwY-hG-DIT"/>
                             <constraint firstItem="CxO-YR-O3H" firstAttribute="leading" secondItem="QC2-Ns-lh9" secondAttribute="leading" id="QF2-sl-ns8"/>
-                            <constraint firstItem="9UA-so-ZRO" firstAttribute="top" secondItem="Sxl-xv-jQQ" secondAttribute="bottom" id="Qnr-Ng-4mJ"/>
                             <constraint firstItem="Sxl-xv-jQQ" firstAttribute="leading" secondItem="QC2-Ns-lh9" secondAttribute="leading" id="UXv-mh-DSO"/>
                             <constraint firstAttribute="trailing" secondItem="CxO-YR-O3H" secondAttribute="trailing" id="q9f-RV-UTc"/>
                             <constraint firstItem="Sxl-xv-jQQ" firstAttribute="top" secondItem="uNb-Sq-xZc" secondAttribute="bottom" id="rBf-zK-QtS"/>
@@ -63,59 +64,65 @@
             <objects>
                 <viewController id="soI-es-E3Q" customClass="MenuSelectorViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apI-wY-FLz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nf7-Jk-JHY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF1-6A-kTt">
-                                        <rect key="frame" x="16" y="7" width="50" height="50"/>
+                                        <rect key="frame" x="51.5" y="14" width="80" height="50"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="O9L-e7-CQO"/>
+                                            <constraint firstAttribute="width" constant="80" id="O9L-e7-CQO"/>
                                             <constraint firstAttribute="height" constant="50" id="mcn-pO-PZL"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Store">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="didPressButton1" destination="soI-es-E3Q" eventType="touchUpInside" id="oaN-9d-j2X"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So0-v3-Elk">
-                                        <rect key="frame" x="82" y="7" width="50" height="50"/>
+                                        <rect key="frame" x="147.5" y="14" width="80" height="50"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="GTY-FM-XLd"/>
-                                            <constraint firstAttribute="width" constant="50" id="jz2-L6-RkL"/>
+                                            <constraint firstAttribute="width" constant="80" id="jz2-L6-RkL"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Branch">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="didPressButton2" destination="soI-es-E3Q" eventType="touchUpInside" id="UJJ-dW-euw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hO-BH-PmD">
-                                        <rect key="frame" x="148" y="7" width="50" height="50"/>
+                                        <rect key="frame" x="243.5" y="14" width="80" height="50"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="VlF-ed-fZA"/>
+                                            <constraint firstAttribute="width" constant="80" id="VlF-ed-fZA"/>
                                             <constraint firstAttribute="height" constant="50" id="ziL-kA-LFS"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="ATM">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="didPressButton3" destination="soI-es-E3Q" eventType="touchUpInside" id="QWP-6u-0Ik"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="1hO-BH-PmD" firstAttribute="centerY" secondItem="Nf7-Jk-JHY" secondAttribute="centerY" id="5PA-WL-F6G"/>
-                                    <constraint firstItem="qF1-6A-kTt" firstAttribute="centerY" secondItem="Nf7-Jk-JHY" secondAttribute="centerY" id="F7d-Pf-0ga"/>
-                                    <constraint firstItem="qF1-6A-kTt" firstAttribute="leading" secondItem="Nf7-Jk-JHY" secondAttribute="leading" constant="16" id="LwK-Jo-5Jl"/>
+                                    <constraint firstItem="1hO-BH-PmD" firstAttribute="bottom" secondItem="So0-v3-Elk" secondAttribute="bottom" id="7h1-UO-cna"/>
                                     <constraint firstItem="1hO-BH-PmD" firstAttribute="leading" secondItem="So0-v3-Elk" secondAttribute="trailing" constant="16" id="PEI-W2-j8E"/>
                                     <constraint firstAttribute="height" constant="64" id="XuA-7u-b8w"/>
-                                    <constraint firstItem="So0-v3-Elk" firstAttribute="centerY" secondItem="Nf7-Jk-JHY" secondAttribute="centerY" id="pFs-A7-pMJ"/>
+                                    <constraint firstItem="So0-v3-Elk" firstAttribute="bottom" secondItem="qF1-6A-kTt" secondAttribute="bottom" id="c92-hq-DD5"/>
+                                    <constraint firstAttribute="bottom" secondItem="qF1-6A-kTt" secondAttribute="bottom" id="mV3-bi-6JX"/>
                                     <constraint firstItem="So0-v3-Elk" firstAttribute="leading" secondItem="qF1-6A-kTt" secondAttribute="trailing" constant="16" id="qUq-8j-1Bo"/>
+                                    <constraint firstItem="So0-v3-Elk" firstAttribute="centerX" secondItem="Nf7-Jk-JHY" secondAttribute="centerX" id="wHQ-iM-pGa"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="w4e-tM-EBV" appends="YES" id="8e6-r4-1Oi"/>
@@ -123,7 +130,7 @@
                                 </connections>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLw-7L-C1n">
-                                <rect key="frame" x="0.0" y="64" width="375" height="231"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="136"/>
                                 <connections>
                                     <segue destination="TbX-EK-mXv" kind="embed" id="zlC-w7-Fal"/>
                                 </connections>
@@ -165,44 +172,80 @@
             <objects>
                 <viewController id="61o-V2-4Dz" customClass="MapViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eEv-ng-xt1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LDF-Gm-Lpc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opU-2g-9KY">
+                                <rect key="frame" x="317" y="389" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Xte-FL-f1i"/>
+                                    <constraint firstAttribute="height" constant="50" id="ysJ-th-fcP"/>
+                                </constraints>
+                                <state key="normal" title="AR">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressAR" destination="61o-V2-4Dz" eventType="touchUpInside" id="55I-b4-5xF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="opU-2g-9KY" secondAttribute="bottom" constant="8" id="0co-HK-Jee"/>
                             <constraint firstItem="LDF-Gm-Lpc" firstAttribute="top" secondItem="eEv-ng-xt1" secondAttribute="top" id="5RU-Xi-v1r"/>
                             <constraint firstAttribute="bottom" secondItem="LDF-Gm-Lpc" secondAttribute="bottom" id="JnO-sq-mZt"/>
                             <constraint firstAttribute="trailing" secondItem="LDF-Gm-Lpc" secondAttribute="trailing" id="LMA-dI-0WA"/>
                             <constraint firstItem="LDF-Gm-Lpc" firstAttribute="leading" secondItem="eEv-ng-xt1" secondAttribute="leading" id="Vz8-2X-i0r"/>
+                            <constraint firstItem="opU-2g-9KY" firstAttribute="trailing" secondItem="eEv-ng-xt1" secondAttribute="trailingMargin" constant="8" id="rkX-zZ-Sjc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonAR" destination="opU-2g-9KY" id="Tnv-nZ-OlC"/>
+                        <outlet property="mapView" destination="LDF-Gm-Lpc" id="07a-AP-BGD"/>
+                        <segue destination="5wy-He-2dL" kind="show" identifier="AR" id="5u4-iv-8Gy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRj-jR-4sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-132" y="842"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="VOT-Xd-vlO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AR" id="5wy-He-2dL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRz-3h-YBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="1179"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kXt-CX-lEg">
             <objects>
                 <viewController id="TbX-EK-mXv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tg4-iK-fcX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L6w-xf-5nP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuPopoverTest" translatesAutoresizingMaskIntoConstraints="NO" id="KGV-wa-T1N">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L6w-xf-5nP" firstAttribute="top" secondItem="Tg4-iK-fcX" secondAttribute="top" id="4pH-B8-pr3"/>
+                            <constraint firstAttribute="bottom" secondItem="KGV-wa-T1N" secondAttribute="bottom" id="7TI-Do-Pfp"/>
+                            <constraint firstItem="KGV-wa-T1N" firstAttribute="leading" secondItem="Tg4-iK-fcX" secondAttribute="leading" id="9YV-2g-vlF"/>
                             <constraint firstItem="L6w-xf-5nP" firstAttribute="leading" secondItem="Tg4-iK-fcX" secondAttribute="leading" id="EZN-Ge-z8D"/>
+                            <constraint firstItem="KGV-wa-T1N" firstAttribute="top" secondItem="Tg4-iK-fcX" secondAttribute="top" id="GU4-na-3o1"/>
                             <constraint firstAttribute="trailing" secondItem="L6w-xf-5nP" secondAttribute="trailing" id="PWp-uf-yiv"/>
+                            <constraint firstAttribute="trailing" secondItem="KGV-wa-T1N" secondAttribute="trailing" id="ZC3-79-XCE"/>
                             <constraint firstAttribute="bottom" secondItem="L6w-xf-5nP" secondAttribute="bottom" id="cSd-j3-DCN"/>
                         </constraints>
                     </view>
@@ -212,4 +255,7 @@
             <point key="canvasLocation" x="808.79999999999995" y="1113.1934032983509"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuPopoverTest" width="372" height="282"/>
+    </resources>
 </document>

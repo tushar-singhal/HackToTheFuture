@@ -14,6 +14,8 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
     @IBOutlet weak var containerMap : UIView!
     @IBOutlet weak var containerMenuSelector : UIView!
     
+    var firstTime = true
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if let vc = segue.destination as? MenuSelectorViewController {
@@ -21,7 +23,24 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
         }
     }
     
-    func doSwipeDown() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if firstTime {
+            constraintHeight.constant = UIScreen.main.bounds.height / 2
+        }
+    }
+        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if firstTime {
+            doSwipeDown()
+            firstTime = false
+        }
+    }
+    
+    func doSwipeUp() {
         containerMenuSelector.isUserInteractionEnabled = false
         
         let height = UIScreen.main.bounds.height
@@ -40,7 +59,7 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
         }
     }
     
-    func doSwipeUp() {
+    func doSwipeDown() {
         containerMenuSelector.isUserInteractionEnabled = false
         
         let height = UIScreen.main.bounds.height
