@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="636" y="910"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Base View Controller-->
         <scene sceneID="dMu-g3-uyk">
             <objects>
-                <viewController id="61o-V2-4Dz" customClass="MapViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="61o-V2-4Dz" customClass="ARBaseViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aWC-2H-m4K"/>
                         <viewControllerLayoutGuide type="bottom" id="cem-Q9-pef"/>
@@ -257,7 +257,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressAR" destination="61o-V2-4Dz" eventType="touchUpInside" id="55I-b4-5xF"/>
+                                    <action selector="showARController:" destination="61o-V2-4Dz" eventType="touchUpInside" id="rWr-J9-Xdz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -272,8 +272,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonAR" destination="opU-2g-9KY" id="Tnv-nZ-OlC"/>
-                        <outlet property="mapView" destination="LDF-Gm-Lpc" id="07a-AP-BGD"/>
+                        <outlet property="mapView" destination="LDF-Gm-Lpc" id="Khj-kA-46N"/>
                         <segue destination="5wy-He-2dL" kind="show" identifier="AR" id="5u4-iv-8Gy"/>
                     </connections>
                 </viewController>

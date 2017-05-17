@@ -39,8 +39,8 @@
 		F882DA851ECC89CA0045E479 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA841ECC89CA0045E479 /* BaseViewController.swift */; };
 		F882DA871ECC89E90045E479 /* ARBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA861ECC89E90045E479 /* ARBaseViewController.swift */; };
 		F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */; };
-		F882DA8C1ECCAFA20045E479 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA8B1ECCAFA20045E479 /* Filters.swift */; };
 		F882DA8E1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA8D1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift */; };
+		F8AE8ABA1ECCC562003D9B24 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA8B1ECCAFA20045E479 /* Filters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -280,7 +280,7 @@
 				TargetAttributes = {
 					F882DA551ECC75580045E479 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DW33VW83TF;
+						DevelopmentTeam = T6L94BYSK4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -394,6 +394,7 @@
 				F882DA8E1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift in Sources */,
 				F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */,
 				7C9EF5FA1ECCA55B009BE6EB /* ARTrackingManager.swift in Sources */,
+				F8AE8ABA1ECCC562003D9B24 /* Filters.swift in Sources */,
 				F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */,
 				F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */,
 				7C9EF5FB1ECCA55B009BE6EB /* ARViewController.swift in Sources */,
@@ -512,7 +513,7 @@
 			baseConfigurationReference = DF7430E16C66ABD6B470D291 /* Pods-HackToTheFuture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DW33VW83TF;
+				DEVELOPMENT_TEAM = T6L94BYSK4;
 				INFOPLIST_FILE = HackToTheFuture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -527,7 +528,7 @@
 			baseConfigurationReference = 0E2C6C3BD51389BDA2B8FD9C /* Pods-HackToTheFuture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DW33VW83TF;
+				DEVELOPMENT_TEAM = T6L94BYSK4;
 				INFOPLIST_FILE = HackToTheFuture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
