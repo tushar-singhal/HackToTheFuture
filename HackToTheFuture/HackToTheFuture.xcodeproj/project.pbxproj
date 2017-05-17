@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7504EF1AE2C34D6634FCA987 /* Pods_HackToTheFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EB24AD2AD123F555A1F239 /* Pods_HackToTheFuture.framework */; };
 		F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA591ECC75580045E479 /* AppDelegate.swift */; };
 		F882DA5C1ECC75580045E479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA5B1ECC75580045E479 /* ViewController.swift */; };
 		F882DA5F1ECC75580045E479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA5D1ECC75580045E479 /* Main.storyboard */; };
@@ -14,9 +15,20 @@
 		F882DA641ECC75580045E479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA621ECC75580045E479 /* LaunchScreen.storyboard */; };
 		F882DA6C1ECC80EB0045E479 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA6B1ECC80EB0045E479 /* AR.storyboard */; };
 		F882DA6E1ECC810D0045E479 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */; };
+		F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA6F1ECC830A0045E479 /* CustomImageView.swift */; };
+		F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA701ECC830A0045E479 /* DownloadImageOperation.swift */; };
+		F882DA751ECC830A0045E479 /* DownloadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA711ECC830A0045E479 /* DownloadQueue.swift */; };
+		F882DA761ECC830A0045E479 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA721ECC830A0045E479 /* Helpers.swift */; };
+		F882DA7A1ECC84280045E479 /* OfferRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA791ECC84280045E479 /* OfferRecord.swift */; };
+		F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA7B1ECC84590045E479 /* BeaconRecord.swift */; };
+		F882DA7F1ECC86B10045E479 /* FileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA7E1ECC86B10045E479 /* FileHelpers.swift */; };
+		F882DA811ECC86E30045E479 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F882DA801ECC86E30045E479 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2C6C3BD51389BDA2B8FD9C /* Pods-HackToTheFuture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackToTheFuture.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackToTheFuture/Pods-HackToTheFuture.release.xcconfig"; sourceTree = "<group>"; };
+		DF7430E16C66ABD6B470D291 /* Pods-HackToTheFuture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackToTheFuture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackToTheFuture/Pods-HackToTheFuture.debug.xcconfig"; sourceTree = "<group>"; };
+		F5EB24AD2AD123F555A1F239 /* Pods_HackToTheFuture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackToTheFuture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F882DA561ECC75580045E479 /* HackToTheFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackToTheFuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F882DA591ECC75580045E479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F882DA5B1ECC75580045E479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +38,14 @@
 		F882DA651ECC75580045E479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F882DA6B1ECC80EB0045E479 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
+		F882DA6F1ECC830A0045E479 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F882DA701ECC830A0045E479 /* DownloadImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageOperation.swift; sourceTree = "<group>"; };
+		F882DA711ECC830A0045E479 /* DownloadQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadQueue.swift; sourceTree = "<group>"; };
+		F882DA721ECC830A0045E479 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F882DA791ECC84280045E479 /* OfferRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferRecord.swift; sourceTree = "<group>"; };
+		F882DA7B1ECC84590045E479 /* BeaconRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconRecord.swift; sourceTree = "<group>"; };
+		F882DA7E1ECC86B10045E479 /* FileHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelpers.swift; sourceTree = "<group>"; };
+		F882DA801ECC86E30045E479 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +53,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F882DA811ECC86E30045E479 /* MapKit.framework in Frameworks */,
+				7504EF1AE2C34D6634FCA987 /* Pods_HackToTheFuture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D395F67B7A7182CE345EDB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF7430E16C66ABD6B470D291 /* Pods-HackToTheFuture.debug.xcconfig */,
+				0E2C6C3BD51389BDA2B8FD9C /* Pods-HackToTheFuture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78A63AD0CDF292910EE755B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F882DA801ECC86E30045E479 /* MapKit.framework */,
+				F5EB24AD2AD123F555A1F239 /* Pods_HackToTheFuture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F882DA4D1ECC75580045E479 = {
 			isa = PBXGroup;
 			children = (
 				F882DA581ECC75580045E479 /* HackToTheFuture */,
 				F882DA571ECC75580045E479 /* Products */,
+				0D395F67B7A7182CE345EDB0 /* Pods */,
+				78A63AD0CDF292910EE755B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,11 +105,42 @@
 				F882DA5D1ECC75580045E479 /* Main.storyboard */,
 				F882DA6B1ECC80EB0045E479 /* AR.storyboard */,
 				F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */,
+				F882DA7D1ECC86A70045E479 /* Helpers */,
+				F882DA781ECC84170045E479 /* Realm */,
+				F882DA771ECC830D0045E479 /* Images */,
 				F882DA601ECC75580045E479 /* Assets.xcassets */,
 				F882DA621ECC75580045E479 /* LaunchScreen.storyboard */,
 				F882DA651ECC75580045E479 /* Info.plist */,
 			);
 			path = HackToTheFuture;
+			sourceTree = "<group>";
+		};
+		F882DA771ECC830D0045E479 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F882DA6F1ECC830A0045E479 /* CustomImageView.swift */,
+				F882DA721ECC830A0045E479 /* Helpers.swift */,
+				F882DA701ECC830A0045E479 /* DownloadImageOperation.swift */,
+				F882DA711ECC830A0045E479 /* DownloadQueue.swift */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F882DA781ECC84170045E479 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				F882DA791ECC84280045E479 /* OfferRecord.swift */,
+				F882DA7B1ECC84590045E479 /* BeaconRecord.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		F882DA7D1ECC86A70045E479 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F882DA7E1ECC86B10045E479 /* FileHelpers.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F882DA681ECC75580045E479 /* Build configuration list for PBXNativeTarget "HackToTheFuture" */;
 			buildPhases = (
+				02B67B17F4FEAD2C4A961024 /* [CP] Check Pods Manifest.lock */,
 				F882DA521ECC75580045E479 /* Sources */,
 				F882DA531ECC75580045E479 /* Frameworks */,
 				F882DA541ECC75580045E479 /* Resources */,
+				AF9E54DE675CDD8CE7C6EAF5 /* [CP] Embed Pods Frameworks */,
+				68862A165A484722A0665067 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,13 +216,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02B67B17F4FEAD2C4A961024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68862A165A484722A0665067 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackToTheFuture/Pods-HackToTheFuture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9E54DE675CDD8CE7C6EAF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackToTheFuture/Pods-HackToTheFuture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F882DA521ECC75580045E479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F882DA7F1ECC86B10045E479 /* FileHelpers.swift in Sources */,
 				F882DA5C1ECC75580045E479 /* ViewController.swift in Sources */,
+				F882DA761ECC830A0045E479 /* Helpers.swift in Sources */,
+				F882DA7A1ECC84280045E479 /* OfferRecord.swift in Sources */,
+				F882DA751ECC830A0045E479 /* DownloadQueue.swift in Sources */,
+				F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */,
+				F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */,
 				F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */,
+				F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +398,7 @@
 		};
 		F882DA691ECC75580045E479 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7430E16C66ABD6B470D291 /* Pods-HackToTheFuture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T6L94BYSK4;
@@ -280,6 +412,7 @@
 		};
 		F882DA6A1ECC75580045E479 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E2C6C3BD51389BDA2B8FD9C /* Pods-HackToTheFuture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T6L94BYSK4;
@@ -310,6 +443,7 @@
 				F882DA6A1ECC75580045E479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

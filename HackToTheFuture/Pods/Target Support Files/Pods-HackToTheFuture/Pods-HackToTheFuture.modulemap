@@ -1,0 +1,6 @@
+framework module Pods_HackToTheFuture {
+  umbrella header "Pods-HackToTheFuture-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let deleteOldDatabase = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -41,6 +43,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func setupDatabase() {
+        let documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let fileUrl = URL.init(string: documents.appending("//default-v1.realm"))
+        
+        Realm.Configuration.defaultConfiguration = Realm.Configuration.init(fileURL: fileUrl,
+                                                                            inMemoryIdentifier: nil,
+                                                                            syncConfiguration: nil,
+                                                                            encryptionKey: nil,
+                                                                            readOnly: false,
+                                                                            schemaVersion: 1,
+                                                                            migrationBlock: nil,
+                                                                            deleteRealmIfMigrationNeeded: true,
+                                                                            objectTypes: [OfferRecord.self,
+                                                                                          BeaconRecord.self])
+        print("\(Realm.Configuration.defaultConfiguration.fileURL!)")
+        if deleteOldDatabase {
+            do {
+                try FileManager.default.removeItem(at: Realm.Configuration.defaultConfiguration.fileURL!)
+            } catch {}
+        }
+    }
 
 }
 
