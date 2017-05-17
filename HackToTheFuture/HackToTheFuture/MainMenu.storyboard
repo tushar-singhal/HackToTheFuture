@@ -272,21 +272,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button1" destination="opU-2g-9KY" id="MjV-ik-bay"/>
                         <outlet property="mapView" destination="LDF-Gm-Lpc" id="Khj-kA-46N"/>
-                        <segue destination="5wy-He-2dL" kind="show" identifier="AR" id="5u4-iv-8Gy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRj-jR-4sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-132" y="842"/>
-        </scene>
-        <!--AR-->
-        <scene sceneID="VOT-Xd-vlO">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AR" id="5wy-He-2dL" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRz-3h-YBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="216" y="1179"/>
         </scene>
         <!--Filter Button Selector View Controller-->
         <scene sceneID="k9A-wF-MgA">

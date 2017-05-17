@@ -65,4 +65,16 @@ class MenuSelectorViewController: BaseViewController, FilterButtonSelectorProtoc
             delegate?.doFilter(type, on: on)
         }
     }
+    
+    @IBAction func didPressButton1() {
+        
+    }
+
+    @IBAction func didPressButton2() {
+        
+    }
+
+    @IBAction func didPressButton3() {
+        
+    }
 }

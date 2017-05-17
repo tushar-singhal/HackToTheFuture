@@ -14,7 +14,10 @@ class ARBaseViewController: BaseViewController {
     
     fileprivate var places = [Place]()
     fileprivate let locationManager = CLLocationManager()
+
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var button1 : UIButton!
+    
     var arViewController: ARViewController!
     var startedLoadingPOIs = false
     
@@ -26,6 +29,12 @@ class ARBaseViewController: BaseViewController {
         locationManager.startUpdatingLocation()
         locationManager.requestWhenInUseAuthorization()
         mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
+        
+        button1.layer.cornerRadius = button1.frame.size.width / 2
+        button1.layer.borderWidth = 1
+        button1.layer.borderColor = UIColor.gray.cgColor
+        button1.clipsToBounds = true
+
     }
     
     override func didReceiveMemoryWarning() {
