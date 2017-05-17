@@ -21,6 +21,11 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func pressedBack() {
+        self.dismiss(animated: true) { 
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

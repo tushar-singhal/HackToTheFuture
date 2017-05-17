@@ -31,7 +31,7 @@ class MapViewController: BaseViewController {
     }
 
     @IBAction func didPressAR() {
-        
+        self.performSegue(withIdentifier: "AR", sender: nil)
     }
 
 }

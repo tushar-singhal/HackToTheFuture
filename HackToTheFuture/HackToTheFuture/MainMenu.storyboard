@@ -206,11 +206,20 @@
                     <connections>
                         <outlet property="buttonAR" destination="opU-2g-9KY" id="Tnv-nZ-OlC"/>
                         <outlet property="mapView" destination="LDF-Gm-Lpc" id="07a-AP-BGD"/>
+                        <segue destination="5wy-He-2dL" kind="show" identifier="AR" id="5u4-iv-8Gy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRj-jR-4sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-132" y="842"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="VOT-Xd-vlO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AR" id="5wy-He-2dL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRz-3h-YBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="1179"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kXt-CX-lEg">
