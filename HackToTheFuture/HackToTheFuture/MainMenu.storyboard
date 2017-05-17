@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OMf-Ag-oA4">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OMf-Ag-oA4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,6 +63,10 @@
         <scene sceneID="DML-Cc-Z3h">
             <objects>
                 <viewController id="soI-es-E3Q" customClass="MenuSelectorViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rPE-B7-N8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="jz3-QS-Lys"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="apI-wY-FLz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,10 +171,15 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="682.3088455772114"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Base View Controller-->
         <scene sceneID="dMu-g3-uyk">
             <objects>
-                <viewController id="61o-V2-4Dz" customClass="MapViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRj-jR-4sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="61o-V2-4Dz" customClass="ARBaseViewController" customModule="HackToTheFuture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8RD-W9-q2f"/>
+                        <viewControllerLayoutGuide type="bottom" id="C2N-0u-Yc4"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eEv-ng-xt1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +198,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressAR" destination="61o-V2-4Dz" eventType="touchUpInside" id="55I-b4-5xF"/>
+                                    <action selector="showARController:" destination="61o-V2-4Dz" eventType="touchUpInside" id="XpL-hc-t8U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -204,27 +213,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonAR" destination="opU-2g-9KY" id="Tnv-nZ-OlC"/>
-                        <outlet property="mapView" destination="LDF-Gm-Lpc" id="07a-AP-BGD"/>
-                        <segue destination="5wy-He-2dL" kind="show" identifier="AR" id="5u4-iv-8Gy"/>
+                        <outlet property="mapView" destination="LDF-Gm-Lpc" id="vFL-3N-sa1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vRj-jR-4sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-132" y="842"/>
-        </scene>
-        <!--AR-->
-        <scene sceneID="VOT-Xd-vlO">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AR" id="5wy-He-2dL" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRz-3h-YBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="216" y="1179"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kXt-CX-lEg">
             <objects>
                 <viewController id="TbX-EK-mXv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FyN-Sr-GpK"/>
+                        <viewControllerLayoutGuide type="bottom" id="NNl-Bf-5yT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tg4-iK-fcX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

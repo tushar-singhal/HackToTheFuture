@@ -26,7 +26,6 @@
 		F882DA5C1ECC75580045E479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA5B1ECC75580045E479 /* ViewController.swift */; };
 		F882DA611ECC75580045E479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F882DA601ECC75580045E479 /* Assets.xcassets */; };
 		F882DA641ECC75580045E479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA621ECC75580045E479 /* LaunchScreen.storyboard */; };
-		F882DA6C1ECC80EB0045E479 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA6B1ECC80EB0045E479 /* AR.storyboard */; };
 		F882DA6E1ECC810D0045E479 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */; };
 		F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA6F1ECC830A0045E479 /* CustomImageView.swift */; };
 		F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA701ECC830A0045E479 /* DownloadImageOperation.swift */; };
@@ -38,7 +37,7 @@
 		F882DA811ECC86E30045E479 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F882DA801ECC86E30045E479 /* MapKit.framework */; };
 		F882DA831ECC89BD0045E479 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */; };
 		F882DA851ECC89CA0045E479 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA841ECC89CA0045E479 /* BaseViewController.swift */; };
-		F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA861ECC89E90045E479 /* MapViewController.swift */; };
+		F882DA871ECC89E90045E479 /* ARBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA861ECC89E90045E479 /* ARBaseViewController.swift */; };
 		F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,6 @@
 		F882DA601ECC75580045E479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F882DA631ECC75580045E479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F882DA651ECC75580045E479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F882DA6B1ECC80EB0045E479 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
 		F882DA6F1ECC830A0045E479 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		F882DA701ECC830A0045E479 /* DownloadImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageOperation.swift; sourceTree = "<group>"; };
@@ -78,7 +76,7 @@
 		F882DA801ECC86E30045E479 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		F882DA841ECC89CA0045E479 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		F882DA861ECC89E90045E479 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F882DA861ECC89E90045E479 /* ARBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARBaseViewController.swift; sourceTree = "<group>"; };
 		F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSelectorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,12 +187,11 @@
 			children = (
 				F882DA591ECC75580045E479 /* AppDelegate.swift */,
 				F882DA5B1ECC75580045E479 /* ViewController.swift */,
-				F882DA6B1ECC80EB0045E479 /* AR.storyboard */,
 				F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */,
 				F882DA841ECC89CA0045E479 /* BaseViewController.swift */,
 				F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */,
 				7C9EF5C81ECCA406009BE6EB /* AR */,
-				F882DA861ECC89E90045E479 /* MapViewController.swift */,
+				F882DA861ECC89E90045E479 /* ARBaseViewController.swift */,
 				F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */,
 				F882DA7D1ECC86A70045E479 /* Helpers */,
 				F882DA781ECC84170045E479 /* Realm */,
@@ -301,7 +298,6 @@
 				F882DA641ECC75580045E479 /* LaunchScreen.storyboard in Resources */,
 				7C9EF5FF1ECCA55B009BE6EB /* hdar_close@2x.png in Resources */,
 				F882DA611ECC75580045E479 /* Assets.xcassets in Resources */,
-				F882DA6C1ECC80EB0045E479 /* AR.storyboard in Resources */,
 				7C9EF5FE1ECCA55B009BE6EB /* hdar_close.png in Resources */,
 				7C9EF6001ECCA55B009BE6EB /* hdar_close@3x.png in Resources */,
 				7C9EF5FD1ECCA55B009BE6EB /* DebugMapViewController.xib in Resources */,
@@ -377,7 +373,7 @@
 				F882DA751ECC830A0045E479 /* DownloadQueue.swift in Sources */,
 				F882DA831ECC89BD0045E479 /* MainMenuViewController.swift in Sources */,
 				7C9EF5F81ECCA55B009BE6EB /* ARAnnotationView.swift in Sources */,
-				F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */,
+				F882DA871ECC89E90045E479 /* ARBaseViewController.swift in Sources */,
 				7C9EF5CE1ECCA46A009BE6EB /* Place.swift in Sources */,
 				F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */,
 				F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */,
