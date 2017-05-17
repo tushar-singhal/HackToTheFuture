@@ -10,10 +10,11 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    @IBOutlet weak var buttonBack : UIButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.roundButton(buttonBack)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +27,23 @@ class BaseViewController: UIViewController {
             
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func showMessage(_ message: String, completionHandler:@escaping () -> Void) {
+        let alertController = UIAlertController(title: "Hack To The Future", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let dismissAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action) -> Void in
+            completionHandler()
+        }
+        
+        alertController.addAction(dismissAction)
+        self.present(alertController, animated: true, completion: nil)
     }
-    */
 
+    func roundButton(_ btn : UIButton?) {
+        if let button = btn {
+            button.layer.cornerRadius = button.frame.size.width / 2
+            button.layer.borderWidth = 1
+            button.layer.borderColor = UIColor.gray.cgColor
+            button.clipsToBounds = true
+        }
+    }
 }

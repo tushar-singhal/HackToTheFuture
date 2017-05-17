@@ -67,14 +67,14 @@ class MenuSelectorViewController: BaseViewController, FilterButtonSelectorProtoc
     }
     
     @IBAction func didPressButton1() {
-        
+        self.performSegue(withIdentifier: "Content", sender: nil)
     }
 
     @IBAction func didPressButton2() {
-        
+        self.performSegue(withIdentifier: "Content", sender: nil)
     }
 
     @IBAction func didPressButton3() {
-        
+        self.performSegue(withIdentifier: "Content", sender: nil)
     }
 }

@@ -215,6 +215,7 @@
                         <outlet property="button1" destination="qF1-6A-kTt" id="LJa-LI-b11"/>
                         <outlet property="button2" destination="So0-v3-Elk" id="Qlx-MQ-h9w"/>
                         <outlet property="button3" destination="1hO-BH-PmD" id="9Vq-GM-jkd"/>
+                        <segue destination="Evc-bG-bt7" kind="show" identifier="Content" id="2pm-g3-LBN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIn-mF-Q27" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,6 +231,14 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="636" y="910"/>
+        </scene>
+        <!--Content-->
+        <scene sceneID="vum-kJ-Rr5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Content" id="Evc-bG-bt7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eA4-mh-5cS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="868"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="dMu-g3-uyk">

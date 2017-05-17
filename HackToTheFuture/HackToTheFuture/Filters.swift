@@ -42,4 +42,42 @@ enum FilterTypes {
             return ""
         }
     }
+    
+    func filterValue() -> String {
+        switch self {
+        case .atm:
+            return "A"
+        case .branch:
+            return "B"
+        case .store:
+            return "C"
+        default:
+            return ""
+        }
+    }
+}
+
+var arrayFilters : [FilterTypes] = []
+
+class Filters: NSObject {
+    func predicate(all : Bool) ->NSPredicate {
+        
+        var filterCodes : [String] = []
+        for filter in arrayFilters {
+            filterCodes.append(filter.filterValue())
+        }
+        
+        if filterCodes.count > 0 {
+            var predicateArray : [NSPredicate] = []
+            for code in filterCodes {
+                let predicate = NSPredicate.init(format: "(category CONTAINS '\(code)')")
+                predicateArray.append(predicate)
+            }
+            let predicate = NSCompoundPredicate.init(orPredicateWithSubpredicates: predicateArray)
+            return predicate
+        } else {
+            let predicate = NSPredicate.init(format: "category != ''")
+            return predicate
+        }
+    }
 }

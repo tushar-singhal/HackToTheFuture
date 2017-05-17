@@ -77,6 +77,14 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
     }
     
     func doFilter(_ type : FilterTypes, on : Bool) {
-        
+        if on {
+            if !arrayFilters.contains(type) {
+                arrayFilters.append(type)
+            }
+        } else {
+            if let index = arrayFilters.index(of: type) {
+                arrayFilters.remove(at: index)
+            }
+        }        
     }
 }
