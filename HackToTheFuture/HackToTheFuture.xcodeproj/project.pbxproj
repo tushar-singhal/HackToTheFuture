@@ -23,6 +23,10 @@
 		F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA7B1ECC84590045E479 /* BeaconRecord.swift */; };
 		F882DA7F1ECC86B10045E479 /* FileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA7E1ECC86B10045E479 /* FileHelpers.swift */; };
 		F882DA811ECC86E30045E479 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F882DA801ECC86E30045E479 /* MapKit.framework */; };
+		F882DA831ECC89BD0045E479 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */; };
+		F882DA851ECC89CA0045E479 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA841ECC89CA0045E479 /* BaseViewController.swift */; };
+		F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA861ECC89E90045E479 /* MapViewController.swift */; };
+		F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		F882DA7B1ECC84590045E479 /* BeaconRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconRecord.swift; sourceTree = "<group>"; };
 		F882DA7E1ECC86B10045E479 /* FileHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelpers.swift; sourceTree = "<group>"; };
 		F882DA801ECC86E30045E479 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		F882DA841ECC89CA0045E479 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F882DA861ECC89E90045E479 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSelectorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				F882DA5D1ECC75580045E479 /* Main.storyboard */,
 				F882DA6B1ECC80EB0045E479 /* AR.storyboard */,
 				F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */,
+				F882DA841ECC89CA0045E479 /* BaseViewController.swift */,
+				F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */,
+				F882DA861ECC89E90045E479 /* MapViewController.swift */,
+				F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */,
 				F882DA7D1ECC86A70045E479 /* Helpers */,
 				F882DA781ECC84170045E479 /* Realm */,
 				F882DA771ECC830D0045E479 /* Images */,
@@ -271,10 +283,14 @@
 			files = (
 				F882DA7F1ECC86B10045E479 /* FileHelpers.swift in Sources */,
 				F882DA5C1ECC75580045E479 /* ViewController.swift in Sources */,
+				F882DA851ECC89CA0045E479 /* BaseViewController.swift in Sources */,
 				F882DA761ECC830A0045E479 /* Helpers.swift in Sources */,
 				F882DA7A1ECC84280045E479 /* OfferRecord.swift in Sources */,
 				F882DA751ECC830A0045E479 /* DownloadQueue.swift in Sources */,
+				F882DA831ECC89BD0045E479 /* MainMenuViewController.swift in Sources */,
+				F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */,
 				F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */,
+				F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */,
 				F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */,
 				F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */,
 				F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */,
