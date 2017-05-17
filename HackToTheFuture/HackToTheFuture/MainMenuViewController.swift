@@ -41,8 +41,6 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
     }
     
     func doSwipeUp() {
-        containerMenuSelector.isUserInteractionEnabled = false
-        
         let height = UIScreen.main.bounds.height
         if constraintHeight.constant > height * 0.75 {
             return
@@ -52,6 +50,7 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
             constraintHeight.constant = height / 2
         }
         
+        containerMenuSelector.isUserInteractionEnabled = false
         UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
         }) { (_) in
@@ -60,8 +59,6 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
     }
     
     func doSwipeDown() {
-        containerMenuSelector.isUserInteractionEnabled = false
-        
         let height = UIScreen.main.bounds.height
         if constraintHeight.constant < height / 2 {
             return
@@ -71,10 +68,15 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
             constraintHeight.constant = height / 2
         }
         
+        containerMenuSelector.isUserInteractionEnabled = false
         UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
         }) { (_) in
             self.containerMenuSelector.isUserInteractionEnabled = true
         }
+    }
+    
+    func doFilter(_ type : FilterTypes, on : Bool) {
+        
     }
 }

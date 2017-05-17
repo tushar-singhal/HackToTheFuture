@@ -11,9 +11,10 @@ import UIKit
 protocol MenuSelectorProtocol : class {
     func doSwipeUp()
     func doSwipeDown()
+    func doFilter(_ type : FilterTypes, on : Bool)
 }
 
-class MenuSelectorViewController: BaseViewController {
+class MenuSelectorViewController: BaseViewController, FilterButtonSelectorProtocol {
 
     @IBOutlet weak var button1 : UIButton!
     @IBOutlet weak var button2 : UIButton!
@@ -31,6 +32,23 @@ class MenuSelectorViewController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? FilterButtonSelectorViewController {
+            var type : FilterTypes = .notDefined
+            if segue.identifier == "Btn1" {
+                type = .atm
+            } else if segue.identifier == "Btn2" {
+                type = .branch
+            } else if segue.identifier == "Btn3" {
+                type = .store
+            } else if segue.identifier == "Btn4" {
+                type = .more
+            }
+            vc.type = type
+            vc.delegate = self
+        }
+    }
     
     @IBAction func didSwipeUp() {
         delegate?.doSwipeUp()
@@ -40,15 +58,11 @@ class MenuSelectorViewController: BaseViewController {
         delegate?.doSwipeDown()
     }
     
-    @IBAction func didPressButton1() {
-        
-    }
-
-    @IBAction func didPressButton2() {
-        
-    }
-
-    @IBAction func didPressButton3() {
-        
+    func didChangeSwitch(_ type: FilterTypes, on: Bool) {
+        if type == .more {
+            delegate?.doSwipeUp()
+        } else {
+            delegate?.doFilter(type, on: on)
+        }
     }
 }

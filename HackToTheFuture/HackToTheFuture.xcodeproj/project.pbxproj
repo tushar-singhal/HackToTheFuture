@@ -26,6 +26,8 @@
 		F882DA851ECC89CA0045E479 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA841ECC89CA0045E479 /* BaseViewController.swift */; };
 		F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA861ECC89E90045E479 /* MapViewController.swift */; };
 		F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */; };
+		F882DA8C1ECCAFA20045E479 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA8B1ECCAFA20045E479 /* Filters.swift */; };
+		F882DA8E1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA8D1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		F882DA841ECC89CA0045E479 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F882DA861ECC89E90045E479 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSelectorViewController.swift; sourceTree = "<group>"; };
+		F882DA8B1ECCAFA20045E479 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		F882DA8D1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterButtonSelectorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */,
 				F882DA861ECC89E90045E479 /* MapViewController.swift */,
 				F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */,
+				F882DA8D1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift */,
+				F882DA8A1ECCAF940045E479 /* Constants */,
 				F882DA7D1ECC86A70045E479 /* Helpers */,
 				F882DA781ECC84170045E479 /* Realm */,
 				F882DA771ECC830D0045E479 /* Images */,
@@ -150,6 +156,14 @@
 				F882DA7E1ECC86B10045E479 /* FileHelpers.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F882DA8A1ECCAF940045E479 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F882DA8B1ECCAFA20045E479 /* Filters.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +298,11 @@
 				F882DA7A1ECC84280045E479 /* OfferRecord.swift in Sources */,
 				F882DA751ECC830A0045E479 /* DownloadQueue.swift in Sources */,
 				F882DA831ECC89BD0045E479 /* MainMenuViewController.swift in Sources */,
+				F882DA8C1ECCAFA20045E479 /* Filters.swift in Sources */,
 				F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */,
 				F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */,
 				F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */,
+				F882DA8E1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift in Sources */,
 				F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */,
 				F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */,
 				F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */,
