@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7504EF1AE2C34D6634FCA987 /* Pods_HackToTheFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EB24AD2AD123F555A1F239 /* Pods_HackToTheFuture.framework */; };
+		7C9EF5CD1ECCA46A009BE6EB /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5C91ECCA46A009BE6EB /* AnnotationView.swift */; };
+		7C9EF5CE1ECCA46A009BE6EB /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5CA1ECCA46A009BE6EB /* Place.swift */; };
+		7C9EF5CF1ECCA46A009BE6EB /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5CB1ECCA46A009BE6EB /* PlaceAnnotation.swift */; };
+		7C9EF5D01ECCA46A009BE6EB /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5CC1ECCA46A009BE6EB /* PlacesLoader.swift */; };
+		7C9EF5F71ECCA55B009BE6EB /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5EB1ECCA55B009BE6EB /* ARAnnotation.swift */; };
+		7C9EF5F81ECCA55B009BE6EB /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5EC1ECCA55B009BE6EB /* ARAnnotationView.swift */; };
+		7C9EF5F91ECCA55B009BE6EB /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5ED1ECCA55B009BE6EB /* ARConfiguration.swift */; };
+		7C9EF5FA1ECCA55B009BE6EB /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5EE1ECCA55B009BE6EB /* ARTrackingManager.swift */; };
+		7C9EF5FB1ECCA55B009BE6EB /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5EF1ECCA55B009BE6EB /* ARViewController.swift */; };
+		7C9EF5FC1ECCA55B009BE6EB /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9EF5F11ECCA55B009BE6EB /* DebugMapViewController.swift */; };
+		7C9EF5FD1ECCA55B009BE6EB /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C9EF5F31ECCA55B009BE6EB /* DebugMapViewController.xib */; };
+		7C9EF5FE1ECCA55B009BE6EB /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9EF5F41ECCA55B009BE6EB /* hdar_close.png */; };
+		7C9EF5FF1ECCA55B009BE6EB /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9EF5F51ECCA55B009BE6EB /* hdar_close@2x.png */; };
+		7C9EF6001ECCA55B009BE6EB /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9EF5F61ECCA55B009BE6EB /* hdar_close@3x.png */; };
 		F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA591ECC75580045E479 /* AppDelegate.swift */; };
 		F882DA5C1ECC75580045E479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882DA5B1ECC75580045E479 /* ViewController.swift */; };
 		F882DA5F1ECC75580045E479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F882DA5D1ECC75580045E479 /* Main.storyboard */; };
@@ -31,6 +45,20 @@
 
 /* Begin PBXFileReference section */
 		0E2C6C3BD51389BDA2B8FD9C /* Pods-HackToTheFuture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackToTheFuture.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackToTheFuture/Pods-HackToTheFuture.release.xcconfig"; sourceTree = "<group>"; };
+		7C9EF5C91ECCA46A009BE6EB /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		7C9EF5CA1ECCA46A009BE6EB /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		7C9EF5CB1ECCA46A009BE6EB /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		7C9EF5CC1ECCA46A009BE6EB /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
+		7C9EF5EB1ECCA55B009BE6EB /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		7C9EF5EC1ECCA55B009BE6EB /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotationView.swift; sourceTree = "<group>"; };
+		7C9EF5ED1ECCA55B009BE6EB /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConfiguration.swift; sourceTree = "<group>"; };
+		7C9EF5EE1ECCA55B009BE6EB /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
+		7C9EF5EF1ECCA55B009BE6EB /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		7C9EF5F11ECCA55B009BE6EB /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		7C9EF5F31ECCA55B009BE6EB /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugMapViewController.xib; sourceTree = "<group>"; };
+		7C9EF5F41ECCA55B009BE6EB /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
+		7C9EF5F51ECCA55B009BE6EB /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
+		7C9EF5F61ECCA55B009BE6EB /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
 		DF7430E16C66ABD6B470D291 /* Pods-HackToTheFuture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackToTheFuture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackToTheFuture/Pods-HackToTheFuture.debug.xcconfig"; sourceTree = "<group>"; };
 		F5EB24AD2AD123F555A1F239 /* Pods_HackToTheFuture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackToTheFuture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F882DA561ECC75580045E479 /* HackToTheFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackToTheFuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +115,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C9EF5C81ECCA406009BE6EB /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				7C9EF5E91ECCA55B009BE6EB /* HDAugmentedReality */,
+				7C9EF5C91ECCA46A009BE6EB /* AnnotationView.swift */,
+				7C9EF5CA1ECCA46A009BE6EB /* Place.swift */,
+				7C9EF5CB1ECCA46A009BE6EB /* PlaceAnnotation.swift */,
+				7C9EF5CC1ECCA46A009BE6EB /* PlacesLoader.swift */,
+			);
+			name = AR;
+			sourceTree = "<group>";
+		};
+		7C9EF5E91ECCA55B009BE6EB /* HDAugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				7C9EF5EA1ECCA55B009BE6EB /* Classes */,
+				7C9EF5F21ECCA55B009BE6EB /* Resources */,
+			);
+			path = HDAugmentedReality;
+			sourceTree = "<group>";
+		};
+		7C9EF5EA1ECCA55B009BE6EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7C9EF5EB1ECCA55B009BE6EB /* ARAnnotation.swift */,
+				7C9EF5EC1ECCA55B009BE6EB /* ARAnnotationView.swift */,
+				7C9EF5ED1ECCA55B009BE6EB /* ARConfiguration.swift */,
+				7C9EF5EE1ECCA55B009BE6EB /* ARTrackingManager.swift */,
+				7C9EF5EF1ECCA55B009BE6EB /* ARViewController.swift */,
+				7C9EF5F01ECCA55B009BE6EB /* Debug */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7C9EF5F01ECCA55B009BE6EB /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				7C9EF5F11ECCA55B009BE6EB /* DebugMapViewController.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		7C9EF5F21ECCA55B009BE6EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C9EF5F31ECCA55B009BE6EB /* DebugMapViewController.xib */,
+				7C9EF5F41ECCA55B009BE6EB /* hdar_close.png */,
+				7C9EF5F51ECCA55B009BE6EB /* hdar_close@2x.png */,
+				7C9EF5F61ECCA55B009BE6EB /* hdar_close@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F882DA4D1ECC75580045E479 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +196,7 @@
 				F882DA6D1ECC810D0045E479 /* MainMenu.storyboard */,
 				F882DA841ECC89CA0045E479 /* BaseViewController.swift */,
 				F882DA821ECC89BD0045E479 /* MainMenuViewController.swift */,
+				7C9EF5C81ECCA406009BE6EB /* AR */,
 				F882DA861ECC89E90045E479 /* MapViewController.swift */,
 				F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */,
 				F882DA7D1ECC86A70045E479 /* Helpers */,
@@ -190,7 +272,7 @@
 				TargetAttributes = {
 					F882DA551ECC75580045E479 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = T6L94BYSK4;
+						DevelopmentTeam = DW33VW83TF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -220,9 +302,13 @@
 			files = (
 				F882DA6E1ECC810D0045E479 /* MainMenu.storyboard in Resources */,
 				F882DA641ECC75580045E479 /* LaunchScreen.storyboard in Resources */,
+				7C9EF5FF1ECCA55B009BE6EB /* hdar_close@2x.png in Resources */,
 				F882DA611ECC75580045E479 /* Assets.xcassets in Resources */,
 				F882DA5F1ECC75580045E479 /* Main.storyboard in Resources */,
 				F882DA6C1ECC80EB0045E479 /* AR.storyboard in Resources */,
+				7C9EF5FE1ECCA55B009BE6EB /* hdar_close.png in Resources */,
+				7C9EF6001ECCA55B009BE6EB /* hdar_close@3x.png in Resources */,
+				7C9EF5FD1ECCA55B009BE6EB /* DebugMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,19 +367,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9EF5FC1ECCA55B009BE6EB /* DebugMapViewController.swift in Sources */,
+				7C9EF5CF1ECCA46A009BE6EB /* PlaceAnnotation.swift in Sources */,
+				7C9EF5F71ECCA55B009BE6EB /* ARAnnotation.swift in Sources */,
 				F882DA7F1ECC86B10045E479 /* FileHelpers.swift in Sources */,
+				7C9EF5F91ECCA55B009BE6EB /* ARConfiguration.swift in Sources */,
 				F882DA5C1ECC75580045E479 /* ViewController.swift in Sources */,
 				F882DA851ECC89CA0045E479 /* BaseViewController.swift in Sources */,
+				7C9EF5CD1ECCA46A009BE6EB /* AnnotationView.swift in Sources */,
 				F882DA761ECC830A0045E479 /* Helpers.swift in Sources */,
 				F882DA7A1ECC84280045E479 /* OfferRecord.swift in Sources */,
+				7C9EF5D01ECCA46A009BE6EB /* PlacesLoader.swift in Sources */,
 				F882DA751ECC830A0045E479 /* DownloadQueue.swift in Sources */,
 				F882DA831ECC89BD0045E479 /* MainMenuViewController.swift in Sources */,
+				7C9EF5F81ECCA55B009BE6EB /* ARAnnotationView.swift in Sources */,
 				F882DA871ECC89E90045E479 /* MapViewController.swift in Sources */,
+				7C9EF5CE1ECCA46A009BE6EB /* Place.swift in Sources */,
 				F882DA7C1ECC84590045E479 /* BeaconRecord.swift in Sources */,
 				F882DA891ECC8A0C0045E479 /* MenuSelectorViewController.swift in Sources */,
 				F882DA731ECC830A0045E479 /* CustomImageView.swift in Sources */,
+				7C9EF5FA1ECCA55B009BE6EB /* ARTrackingManager.swift in Sources */,
 				F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */,
 				F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */,
+				7C9EF5FB1ECCA55B009BE6EB /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +513,9 @@
 			baseConfigurationReference = DF7430E16C66ABD6B470D291 /* Pods-HackToTheFuture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T6L94BYSK4;
+				DEVELOPMENT_TEAM = DW33VW83TF;
 				INFOPLIST_FILE = HackToTheFuture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HackToTheFuture.HackToTheFuture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,8 +528,9 @@
 			baseConfigurationReference = 0E2C6C3BD51389BDA2B8FD9C /* Pods-HackToTheFuture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T6L94BYSK4;
+				DEVELOPMENT_TEAM = DW33VW83TF;
 				INFOPLIST_FILE = HackToTheFuture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HackToTheFuture.HackToTheFuture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
