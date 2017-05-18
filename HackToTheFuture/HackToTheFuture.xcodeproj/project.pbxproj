@@ -46,6 +46,9 @@
 		F8AE8AC11ECCCA0A003D9B24 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE8AC01ECCCA0A003D9B24 /* WebViewController.swift */; };
 		F8AE8AC31ECCCCAD003D9B24 /* ContentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE8AC21ECCCCAD003D9B24 /* ContentListTableViewCell.swift */; };
 		F8AE8AC51ECCD1E4003D9B24 /* ContentListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8AE8AC41ECCD1E4003D9B24 /* ContentListTableViewCell.xib */; };
+		F8AE8AC71ECCD3B7003D9B24 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AE8AC61ECCD3B7003D9B24 /* libsqlite3.0.tbd */; };
+		F8AE8ACA1ECCD4D7003D9B24 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE8AC91ECCD4D7003D9B24 /* BeaconManager.swift */; };
+		F8AE8ACC1ECCD874003D9B24 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AE8ACB1ECCD874003D9B24 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +95,9 @@
 		F8AE8AC01ECCCA0A003D9B24 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F8AE8AC21ECCCCAD003D9B24 /* ContentListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListTableViewCell.swift; sourceTree = "<group>"; };
 		F8AE8AC41ECCD1E4003D9B24 /* ContentListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentListTableViewCell.xib; sourceTree = "<group>"; };
+		F8AE8AC61ECCD3B7003D9B24 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F8AE8AC91ECCD4D7003D9B24 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		F8AE8ACB1ECCD874003D9B24 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AE8ACC1ECCD874003D9B24 /* CoreBluetooth.framework in Frameworks */,
+				F8AE8AC71ECCD3B7003D9B24 /* libsqlite3.0.tbd in Frameworks */,
 				F882DA811ECC86E30045E479 /* MapKit.framework in Frameworks */,
 				7504EF1AE2C34D6634FCA987 /* Pods_HackToTheFuture.framework in Frameworks */,
 			);
@@ -119,6 +127,8 @@
 		78A63AD0CDF292910EE755B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8AE8ACB1ECCD874003D9B24 /* CoreBluetooth.framework */,
+				F8AE8AC61ECCD3B7003D9B24 /* libsqlite3.0.tbd */,
 				F882DA801ECC86E30045E479 /* MapKit.framework */,
 				F5EB24AD2AD123F555A1F239 /* Pods_HackToTheFuture.framework */,
 			);
@@ -208,6 +218,7 @@
 				F882DA861ECC89E90045E479 /* ARBaseViewController.swift */,
 				F882DA881ECC8A0C0045E479 /* MenuSelectorViewController.swift */,
 				F882DA8D1ECCB23C0045E479 /* FilterButtonSelectorViewController.swift */,
+				F8AE8AC81ECCD495003D9B24 /* Beacons */,
 				F8AE8ABD1ECCC95B003D9B24 /* Content */,
 				F882DA8A1ECCAF940045E479 /* Constants */,
 				F882DA7D1ECC86A70045E479 /* Helpers */,
@@ -266,6 +277,14 @@
 				F8AE8AC01ECCCA0A003D9B24 /* WebViewController.swift */,
 			);
 			name = Content;
+			sourceTree = "<group>";
+		};
+		F8AE8AC81ECCD495003D9B24 /* Beacons */ = {
+			isa = PBXGroup;
+			children = (
+				F8AE8AC91ECCD4D7003D9B24 /* BeaconManager.swift */,
+			);
+			name = Beacons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +444,7 @@
 				F8AE8ABA1ECCC562003D9B24 /* Filters.swift in Sources */,
 				F882DA5A1ECC75580045E479 /* AppDelegate.swift in Sources */,
 				F882DA741ECC830A0045E479 /* DownloadImageOperation.swift in Sources */,
+				F8AE8ACA1ECCD4D7003D9B24 /* BeaconManager.swift in Sources */,
 				7C9EF5FB1ECCA55B009BE6EB /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

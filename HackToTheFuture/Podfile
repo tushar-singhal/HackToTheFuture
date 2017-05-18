@@ -8,6 +8,7 @@ target 'HackToTheFuture' do
   # Pods for HackToTheFuture
 
   pod 'RealmSwift'
+  pod 'ProximityKit'
   
     post_install do |installer|
         installer.pods_project.targets.each do |target|

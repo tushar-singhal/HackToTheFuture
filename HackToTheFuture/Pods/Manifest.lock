@@ -1,4 +1,5 @@
 PODS:
+  - ProximityKit (1.2.9)
   - Realm (2.7.0):
     - Realm/Headers (= 2.7.0)
   - Realm/Headers (2.7.0)
@@ -6,12 +7,14 @@ PODS:
     - Realm (= 2.7.0)
 
 DEPENDENCIES:
+  - ProximityKit
   - RealmSwift
 
 SPEC CHECKSUMS:
+  ProximityKit: e763235e2fca64711ed7a5bae08cea1508f80919
   Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
   RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
 
-PODFILE CHECKSUM: b412407d61c9d95eb35b81d8e986a032d5d9aada
+PODFILE CHECKSUM: 5c7ad7683573b75adf8f5c460d9aa99e90c850e3
 
 COCOAPODS: 1.2.1

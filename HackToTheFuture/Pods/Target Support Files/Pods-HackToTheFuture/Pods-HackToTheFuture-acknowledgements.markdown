@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## ProximityKit
+
+See http://radiusnetworks.com/terms_of_service.html
+
 ## Realm
 
 TABLE OF CONTENTS

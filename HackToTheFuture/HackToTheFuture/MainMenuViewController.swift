@@ -16,6 +16,12 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
     
     var firstTime = true
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let _ = BeaconManager.shared
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if let vc = segue.destination as? MenuSelectorViewController {

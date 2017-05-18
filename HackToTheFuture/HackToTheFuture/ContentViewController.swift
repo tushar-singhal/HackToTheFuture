@@ -87,10 +87,11 @@ class ContentViewController: BaseViewController {
         super.prepare(for: segue, sender: sender)
         
         if segue.identifier == "Web" {
-            if let vc = segue.destination as? WebViewController {
+            if let vc = segue.destination as? WebViewController,
+                let rec = sender as? BeaconRecord {
                 vc.info = InfoObject()
-                vc.info.title = "Title"
-                vc.info.url = "Url"
+                vc.info.title = rec.title
+                vc.info.url = rec.contactWebsite
             }
         }
     }
@@ -127,7 +128,8 @@ extension ContentViewController : UITableViewDelegate {
         let cellNew = tableView.cellForRow(at: indexPath) as! ContentListTableViewCell
         cellNew.isSelected = true
         
-        self.performSegue(withIdentifier: "Web", sender: selectedIndexPath)
+        let rec = self.getRecord(indexPath.row)
+        self.performSegue(withIdentifier: "Web", sender: rec)
     }
 }
 
