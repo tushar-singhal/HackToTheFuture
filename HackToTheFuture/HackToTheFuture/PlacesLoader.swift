@@ -12,7 +12,7 @@ struct PlacesLoader {
     let latitude = location.coordinate.latitude
     let longitude = location.coordinate.longitude
     
-    let uri = apiURL + "nearbysearch/json?location=\(latitude),\(longitude)&radius=\(radius)&sensor=true&types=hospital&key=\(apiKey)"
+    let uri = apiURL + "nearbysearch/json?location=\(latitude),\(longitude)&radius=\(radius)&sensor=true&types=atm&key=\(apiKey)"
     
     let url = URL(string: uri)!
     let session = URLSession(configuration: URLSessionConfiguration.default)

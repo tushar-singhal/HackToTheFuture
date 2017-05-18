@@ -8,21 +8,43 @@
 			<key>category</key>
 			<string>A</string>
 			<key>title</key>
-			<string>Title</string>
+			<string>Branch Cash Point</string>
 			<key>subTitle</key>
 			<string>Sub title</string>
 			<key>body</key>
-			<string>This is the body</string>
+			<string>You have arrived at ATM!Donate to Charity;10% Cashback; Reward Program</string>
 			<key>address</key>
-			<string>This is the address</string>
+			<string>167 Moorgate, London EC2M 6XQ</string>
 			<key>lat</key>
-			<integer>0</integer>
+			<real>51.519332</real>
 			<key>lon</key>
-			<integer>0</integer>
+			<real>-0.08795500000000001</real>
 			<key>www</key>
 			<string>http://www.google.com</string>
 			<key>imageUrl</key>
-			<string>http://s3.r29static.com/bin/entry/d13/x,80/1118390/image.jpg</string>
+			<string>http://s3.r29static.com/bin/entry/d13/x,80/1118390/image&amp;.jpg</string>
+			<key>beaconUUID</key>
+			<string>3CE2EF69-4414-469D-9D55-3EC7FCC38523</string>
+		</dict>
+		<dict>
+			<key>category</key>
+			<string>A</string>
+			<key>title</key>
+			<string>Branch Cash Point</string>
+			<key>subTitle</key>
+			<string>LINK ATM</string>
+			<key>body</key>
+			<string>You have arrived at ATM!Donate to Charity;10% Cashback; Reward Program</string>
+			<key>address</key>
+			<string>101-107 Finsbury Pavement, London EC2A 1RS</string>
+			<key>lat</key>
+			<real>51.520694</real>
+			<key>lon</key>
+			<real>-0.087504</real>
+			<key>www</key>
+			<string>http://www.yahoo.com</string>
+			<key>imageUrl</key>
+			<string>https://s-media-cache-ak0.pinimg.com/736x/57/e0/5b/57e05b1aa6aa1233de41b81bf04976e5.jpg</string>
 			<key>beaconUUID</key>
 			<string></string>
 		</dict>
@@ -30,23 +52,89 @@
 			<key>category</key>
 			<string>A</string>
 			<key>title</key>
-			<string>Title 2</string>
+			<string>In-Store Cashpoint</string>
 			<key>subTitle</key>
-			<string>Sub title 2</string>
+			<string>Waitrose LINK ATM</string>
 			<key>body</key>
-			<string>This is the body 2</string>
+			<string>You have arrived at ATM!Donate to Charity;10% Cashback; Reward Program</string>
 			<key>address</key>
-			<string>This is the address 2</string>
+			<string>5 Cherry Tree Walk, London EC1Y 8NX</string>
 			<key>lat</key>
-			<integer>0</integer>
+			<real>51.522202</real>
 			<key>lon</key>
-			<integer>0</integer>
+			<real>-0.092053</real>
+			<key>www</key>
+			<string>http://www.waitrose.com/bf_home/bf/732.html</string>
+			<key>imageUrl</key>
+			<string>https://igx.4sqi.net/img/general/600x600/GEMQAPQUZREO5NUS31AOCM4LNHLOUKTW0N3F1055LRYNTLWV.jpg</string>
+			<key>beaconUUID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>category</key>
+			<string>A</string>
+			<key>title</key>
+			<string>24HR Cashpoint</string>
+			<key>subTitle</key>
+			<string>London Liverpool Street Station ATM</string>
+			<key>body</key>
+			<string>You have arrived at ATM!Donate to Charity;10% Cashback; Reward Program</string>
+			<key>address</key>
+			<string>Main Concourse, Liverpool St, London EC2M 7PY</string>
+			<key>lat</key>
+			<real>51.517409</real>
+			<key>lon</key>
+			<real>-0.082097</real>
 			<key>www</key>
 			<string>http://www.yahoo.com</string>
 			<key>imageUrl</key>
-			<string>https://s-media-cache-ak0.pinimg.com/736x/57/e0/5b/57e05b1aa6aa1233de41b81bf04976e5.jpg</string>
+			<string>http://www.nationalrail.co.uk/images/SMEHotspotDetails/SME_LST/o2421-0213571.jpg</string>
 			<key>beaconUUID</key>
 			<string></string>
+		</dict>
+		<dict>
+			<key>category</key>
+			<string>B</string>
+			<key>title</key>
+			<string>Halifax Branch</string>
+			<key>subTitle</key>
+			<string>Halifax Bank  Finsbury Pavement</string>
+			<key>body</key>
+			<string>Branch Info</string>
+			<key>address</key>
+			<string>109 Finsbury Pavement, London EC2A 1LB</string>
+			<key>lat</key>
+			<real>51.519646</real>
+			<key>lon</key>
+			<real>-0.08785800000000001</real>
+			<key>www</key>
+			<string>http://www.lloydsbank.com</string>
+			<key>imageUrl</key>
+			<string>https://www.yell.com/static/image/2ed3f09d-a320-492e-bae1-8c1f8e9645f8_image_jpeg</string>
+			<key>beaconUUID</key>
+			<string>3CE2EF69-4414-469D-9D55-3EC7FCC38522</string>
+		</dict>
+		<dict>
+			<key>category</key>
+			<string>C</string>
+			<key>title</key>
+			<string>Marks &amp; Spencer</string>
+			<key>subTitle</key>
+			<string>M&amp;S Finsbury Pavement</string>
+			<key>body</key>
+			<string>Avail 20% off on just in stock!</string>
+			<key>address</key>
+			<string>70 Finsbury Pavement, London, Moorgate EC2A 1SA</string>
+			<key>lat</key>
+			<real>51.519569</real>
+			<key>lon</key>
+			<real>-0.087295</real>
+			<key>www</key>
+			<string>http://www.marksandspencer.com</string>
+			<key>imageUrl</key>
+			<string>http://cdn.ltstatic.com/2009/September/KP741374_942long.jpg</string>
+			<key>beaconUUID</key>
+			<string>3CE2EF69-4414-469D-9D55-3EC7FCC38521</string>
 		</dict>
 	</array>
 </dict>

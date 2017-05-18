@@ -57,8 +57,9 @@ class BeaconLoader: NSObject {
                     rec.body = self.validateString(item["body"])
                     rec.imageUrl = self.validateString(item["imageUrl"])
                     rec.contactWebsite = self.validateString(item["www"])
-                    rec.beaconUdid = self.validateString(item["beaconUUID"])
-
+                    rec.beaconUdid = self.validateString(item["beaconUUID"]).uppercased()
+                  
+                    print(rec.beaconUdid)
                     realm.add(rec)
                 }}
             }

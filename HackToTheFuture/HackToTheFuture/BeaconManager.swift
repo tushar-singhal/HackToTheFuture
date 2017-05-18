@@ -16,6 +16,8 @@ class BeaconManager: NSObject, RPKManagerDelegate {
 
     static let shared = BeaconManager()
 
+    var arrayDone : [Int] = []
+    
     let kNotifBeacon = Notification.Name(rawValue: "NotifBeacon")
     
     var kit : RPKManager?
@@ -73,7 +75,11 @@ class BeaconManager: NSObject, RPKManagerDelegate {
         for beacon in beacons as! [RPKBeacon] {
             print("Major: \(beacon.major), Minor: \(beacon.minor)")
             
-            scheduleLocal(beacon.uuid, major : beacon.major)
+            let index = Int(beacon.major)
+            if !arrayDone.contains(index) {
+                arrayDone.append(index)
+                scheduleLocal(beacon.uuid, major : beacon.major)
+            }
         }
     }
     
@@ -84,7 +90,7 @@ class BeaconManager: NSObject, RPKManagerDelegate {
         content.body = "We found a beacon"
         
         let realm = try! Realm()
-        let predicate = NSPredicate.init(format: "(beaconUdid == '\(uuid.uuidString)')")
+        let predicate = NSPredicate.init(format: "beaconUdid == '\(uuid.uuidString)'")
         let results = realm.objects(BeaconRecord.self).filter(predicate)
         if results.count > 0 {
             let rec = results.first
