@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Helpers.cleanImageCache()
         self.setupDatabase()
+        self.registerForLocalNotif()
+        
         return true
     }
 
@@ -66,6 +69,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } catch {}
         }
     }
-
+    
+    func registerForLocalNotif() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+            (granted, error) in
+            //Parse errors and track state
+        }
+    }
 }
 

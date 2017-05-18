@@ -8,6 +8,8 @@
 
 import UIKit
 import ProximityKit
+import UserNotifications
+import RealmSwift
 
 class BeaconManager: NSObject, RPKManagerDelegate {
 
@@ -67,6 +69,32 @@ class BeaconManager: NSObject, RPKManagerDelegate {
     func proximityKit(_ manager: RPKManager!, didRangeBeacons beacons: [Any]!, in region: RPKBeaconRegion!) {
         for beacon in beacons as! [RPKBeacon] {
             print("Major: \(beacon.major), Minor: \(beacon.minor)")
+            
+            scheduleLocal(beacon.uuid, major : beacon.major)
         }
+    }
+    
+    func scheduleLocal(_ uuid : UUID, major : NSNumber) {
+        let content = UNMutableNotificationContent()
+        
+        content.title = "Hack To The Future"
+        content.body = "We found a beacon"
+        
+        let realm = try! Realm()
+        let predicate = NSPredicate.init(format: "(beaconUdid == '\(uuid.uuidString)')")
+        let results = realm.objects(BeaconRecord.self).filter(predicate)
+        if results.count > 0 {
+            let rec = results.first
+            content.title = rec?.title ?? "Hack"
+            content.body = rec?.body ?? "To The Future"
+        }
+        
+        content.sound = UNNotificationSound.default()
+        
+        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 0, repeats: false)
+        let request = UNNotificationRequest.init(identifier: "FiveSecond", content: content, trigger: trigger)
+        
+        let center = UNUserNotificationCenter.current()
+        center.add(request) { (_) in }
     }
 }
