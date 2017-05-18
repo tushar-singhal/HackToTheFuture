@@ -49,6 +49,7 @@
 		F8AE8AC71ECCD3B7003D9B24 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AE8AC61ECCD3B7003D9B24 /* libsqlite3.0.tbd */; };
 		F8AE8ACA1ECCD4D7003D9B24 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE8AC91ECCD4D7003D9B24 /* BeaconManager.swift */; };
 		F8AE8ACC1ECCD874003D9B24 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AE8ACB1ECCD874003D9B24 /* CoreBluetooth.framework */; };
+		F8AE8ACE1ECD8C43003D9B24 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8AE8ACD1ECD8C43003D9B24 /* Locations.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		F8AE8AC61ECCD3B7003D9B24 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		F8AE8AC91ECCD4D7003D9B24 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		F8AE8ACB1ECCD874003D9B24 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F8AE8ACD1ECD8C43003D9B24 /* Locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				F882DA791ECC84280045E479 /* OfferRecord.swift */,
 				F882DA7B1ECC84590045E479 /* BeaconRecord.swift */,
+				F8AE8ACD1ECD8C43003D9B24 /* Locations.plist */,
 			);
 			name = Realm;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AE8ACE1ECD8C43003D9B24 /* Locations.plist in Resources */,
 				F882DA6E1ECC810D0045E479 /* MainMenu.storyboard in Resources */,
 				F882DA641ECC75580045E479 /* LaunchScreen.storyboard in Resources */,
 				7C9EF5FF1ECCA55B009BE6EB /* hdar_close@2x.png in Resources */,

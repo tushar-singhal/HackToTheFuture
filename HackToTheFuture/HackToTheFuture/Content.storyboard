@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h3y-KC-TfC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="fKv-Cr-6Km" id="yLd-OM-gAC"/>
@@ -46,11 +46,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="h3y-KC-TfC" firstAttribute="top" secondItem="ceG-qN-by4" secondAttribute="bottom" id="AHM-ID-5hO"/>
                             <constraint firstItem="4Hv-5X-XcK" firstAttribute="top" secondItem="h3y-KC-TfC" secondAttribute="bottom" id="F9W-S7-GrT"/>
                             <constraint firstAttribute="trailing" secondItem="h3y-KC-TfC" secondAttribute="trailing" id="MIL-4q-Pef"/>
                             <constraint firstItem="h3y-KC-TfC" firstAttribute="leading" secondItem="Wky-zI-Y3o" secondAttribute="leading" id="Pgy-az-hmG"/>
                             <constraint firstItem="ceG-qN-by4" firstAttribute="leading" secondItem="Wky-zI-Y3o" secondAttribute="leading" constant="8" id="VwF-nd-Hnh"/>
-                            <constraint firstItem="h3y-KC-TfC" firstAttribute="top" secondItem="fkB-2z-Kej" secondAttribute="bottom" id="c87-z6-8Tx"/>
                             <constraint firstItem="ceG-qN-by4" firstAttribute="top" secondItem="fkB-2z-Kej" secondAttribute="bottom" constant="8" id="ftU-L0-oTk"/>
                         </constraints>
                     </view>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxK-xj-Jks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="116"/>
+            <point key="canvasLocation" x="56.799999999999997" y="115.59220389805098"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="oFa-Zy-gvn">
@@ -76,8 +76,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WO-Xs-rtG">
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fV4-jK-GSr" id="8nn-MD-bCd"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5vQ-4W-DUD">
+                                <rect key="frame" x="177" y="23" width="20" height="20"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTn-Jo-wrp">
-                                <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                <rect key="frame" x="8" y="28" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LLY-7F-24d"/>
@@ -87,34 +97,25 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressedBack" destination="fKv-Cr-6Km" eventType="touchUpInside" id="vOM-LG-svv"/>
+                                    <action selector="pressedBack" destination="fV4-jK-GSr" eventType="touchUpInside" id="Chn-Ne-Xv4"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WO-Xs-rtG">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="fV4-jK-GSr" id="8nn-MD-bCd"/>
-                                </connections>
-                            </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5vQ-4W-DUD">
-                                <rect key="frame" x="177" y="23" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5WO-Xs-rtG" secondAttribute="trailing" id="03T-ZT-i7k"/>
                             <constraint firstItem="U84-Ah-GF7" firstAttribute="top" secondItem="5WO-Xs-rtG" secondAttribute="bottom" id="4LY-Oo-Ngh"/>
-                            <constraint firstItem="5WO-Xs-rtG" firstAttribute="top" secondItem="DTn-Jo-wrp" secondAttribute="bottom" id="618-Ig-uGG"/>
+                            <constraint firstItem="5WO-Xs-rtG" firstAttribute="top" secondItem="DTn-Jo-wrp" secondAttribute="bottom" constant="16" id="618-Ig-uGG"/>
                             <constraint firstItem="5vQ-4W-DUD" firstAttribute="top" secondItem="UFe-el-LMF" secondAttribute="bottom" constant="3" id="Iji-gf-wh7"/>
                             <constraint firstItem="DTn-Jo-wrp" firstAttribute="leading" secondItem="Yvr-Jr-Ohd" secondAttribute="leading" constant="8" id="M2L-KY-7wo"/>
                             <constraint firstItem="5vQ-4W-DUD" firstAttribute="centerX" secondItem="Yvr-Jr-Ohd" secondAttribute="centerX" id="O9N-SB-nbk"/>
-                            <constraint firstItem="DTn-Jo-wrp" firstAttribute="top" secondItem="UFe-el-LMF" secondAttribute="bottom" constant="-12" id="QPP-h2-S7l"/>
+                            <constraint firstItem="DTn-Jo-wrp" firstAttribute="top" secondItem="UFe-el-LMF" secondAttribute="bottom" constant="8" id="QPP-h2-S7l"/>
                             <constraint firstItem="5WO-Xs-rtG" firstAttribute="leading" secondItem="Yvr-Jr-Ohd" secondAttribute="leading" id="hNz-29-5Cg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityView" destination="5vQ-4W-DUD" id="8zW-rw-DPG"/>
+                        <outlet property="buttonBack" destination="DTn-Jo-wrp" id="1rU-Mn-0uj"/>
                         <outlet property="webView" destination="5WO-Xs-rtG" id="4Xm-Vo-41G"/>
                     </connections>
                 </viewController>

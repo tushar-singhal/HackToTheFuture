@@ -6,6 +6,11 @@
 	<string>Hack to the Future is watching you</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Get ready to experience some magic!</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

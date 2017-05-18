@@ -19,6 +19,7 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BeaconLoader().load()
         let _ = BeaconManager.shared
     }
     

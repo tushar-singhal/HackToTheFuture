@@ -15,21 +15,19 @@ class InfoObject: NSObject {
     var url : String = ""
 }
 
-var currentIndex = -1
+var currentIndex = ""
 
 class ContentViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     let cellId = "CellContent"
-    var selectedIndexPath = IndexPath.init(row: -1, section: -1)
-
     let realm = try! Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.register(UINib.init(nibName: "ContentTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
+        self.tableView.register(UINib.init(nibName: "ContentListTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
         self.tableView.estimatedRowHeight = 80
         self.tableView.backgroundColor = UIColor.clear
     }
@@ -42,25 +40,6 @@ class ContentViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if self.selectedIndexPath.row >= 0 {
-            let cell = tableView.cellForRow(at: self.selectedIndexPath) as! ContentListTableViewCell
-            cell.isSelected = false
-            
-            self.tableView.reloadRows(at: [self.selectedIndexPath], with: .automatic)
-        }
-        
-        if currentIndex >= 0 {
-            for (count, item) in array.enumerated() {
-                if item.index == currentIndex {
-                    self.selectedIndexPath = IndexPath.init(row: count, section: 0)
-                    self.tableView.scrollToRow(at: self.selectedIndexPath, at: .middle, animated: true)
-                    
-                    let cell = tableView.cellForRow(at: self.selectedIndexPath) as! ContentListTableViewCell
-                    cell.isSelected = true
-                    break
-                }
-            }
-        }
     }
     
     var array: Results<BeaconRecord> {
@@ -115,18 +94,6 @@ extension ContentViewController : UITableViewDataSource {
 extension ContentViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        
-        if self.selectedIndexPath.row >= 0 {
-            if indexPath.row != self.selectedIndexPath.row {
-                if let cell = tableView.cellForRow(at: self.selectedIndexPath) as? ContentListTableViewCell {
-                    cell.isSelected = false
-                }
-            }
-        }
-        
-        self.selectedIndexPath = indexPath
-        let cellNew = tableView.cellForRow(at: indexPath) as! ContentListTableViewCell
-        cellNew.isSelected = true
         
         let rec = self.getRecord(indexPath.row)
         self.performSegue(withIdentifier: "Web", sender: rec)

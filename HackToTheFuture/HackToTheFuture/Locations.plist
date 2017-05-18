@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Locations</key>
+	<array>
+		<dict>
+			<key>category</key>
+			<string>A</string>
+			<key>title</key>
+			<string>Title</string>
+			<key>subTitle</key>
+			<string>Sub title</string>
+			<key>body</key>
+			<string>This is the body</string>
+			<key>address</key>
+			<string>This is the address</string>
+			<key>lat</key>
+			<integer>0</integer>
+			<key>lon</key>
+			<integer>0</integer>
+			<key>www</key>
+			<string>http://www.google.com</string>
+			<key>imageUrl</key>
+			<string>http://s3.r29static.com/bin/entry/d13/x,80/1118390/image.jpg</string>
+			<key>beaconUUID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>category</key>
+			<string>A</string>
+			<key>title</key>
+			<string>Title 2</string>
+			<key>subTitle</key>
+			<string>Sub title 2</string>
+			<key>body</key>
+			<string>This is the body 2</string>
+			<key>address</key>
+			<string>This is the address 2</string>
+			<key>lat</key>
+			<integer>0</integer>
+			<key>lon</key>
+			<integer>0</integer>
+			<key>www</key>
+			<string>http://www.yahoo.com</string>
+			<key>imageUrl</key>
+			<string>https://s-media-cache-ak0.pinimg.com/736x/57/e0/5b/57e05b1aa6aa1233de41b81bf04976e5.jpg</string>
+			<key>beaconUUID</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

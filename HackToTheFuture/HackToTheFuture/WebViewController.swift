@@ -18,8 +18,6 @@ class WebViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let urlRequest = URLRequest.init(url: URL.init(string: info.url)!)
-        self.webView.loadRequest(urlRequest)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +25,7 @@ class WebViewController: BaseViewController {
         
         self.activityView?.isHidden = false
         
-        let urlRequest = URLRequest.init(url: URL.init(string: info.url)!)
+        var urlRequest = URLRequest.init(url: URL.init(string: info.url)!)
         self.webView.loadRequest(urlRequest)
     }
 }
