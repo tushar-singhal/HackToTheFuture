@@ -11,9 +11,12 @@ import ProximityKit
 import UserNotifications
 import RealmSwift
 
+
 class BeaconManager: NSObject, RPKManagerDelegate {
 
     static let shared = BeaconManager()
+
+    let kNotifBeacon = Notification.Name(rawValue: "NotifBeacon")
     
     var kit : RPKManager?
     
@@ -91,8 +94,10 @@ class BeaconManager: NSObject, RPKManagerDelegate {
         
         content.sound = UNNotificationSound.default()
         
-        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 0.5, repeats: false)
         let request = UNNotificationRequest.init(identifier: "FiveSecond", content: content, trigger: trigger)
+        
+        NotificationCenter.default.post(name: kNotifBeacon, object: content.title)
         
         let center = UNUserNotificationCenter.current()
         center.add(request) { (_) in }

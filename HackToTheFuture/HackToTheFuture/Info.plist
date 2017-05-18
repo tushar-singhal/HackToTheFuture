@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Hack to the Future is watching you</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We will need to track you to show your location on the map</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Get ready to experience some magic!</string>
 	<key>NSAppTransportSecurity</key>

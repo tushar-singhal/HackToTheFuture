@@ -21,6 +21,8 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
         
         BeaconLoader().load()
         let _ = BeaconManager.shared
+
+//        NotificationCenter.default.addObserver(self, selector: #selector(MainMenu.alert), name: BeaconManager().kNotifBeacon, object: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -93,5 +95,14 @@ class MainMenu: BaseViewController, MenuSelectorProtocol {
                 arrayFilters.remove(at: index)
             }
         }        
+    }
+
+    func alert(_ notif : Notification) {
+//        if let object = notif.object as? String {
+//            print (object)
+//            let alert = UIAlertController(title: "Hack to the Future" , message: object, preferredStyle: UIAlertControllerStyle.alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
+//        }
     }
 }
